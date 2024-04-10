@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="50dp"
+    android:layout_marginHorizontal="34dp"
+    >
+    <!--especificacion para los recursos en imagenes:
+        El nombre:
+            1.- No debe tener caracteres espciales
+            2.- No espacios
+            3.- No mayusculas
+            4.- Si numero
+            5.- Si guion bajo
+
+            el mach_parent
+            el wrap_content se adapta solo alcontenido que esta ocupando
+    -->
+    <!-- no imparta como se tenga el dispositivo siempre se centrara-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_selector1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MiTitulo2"
+            android:textSize="30sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold|italic"/>
+            <!--dp es para dimensionar tamaños de obojetos, views, containers
+            y el sp especificamente para dimensionar los textos-->
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_nombre"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/app_text_nnombre"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_age"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAnio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/app_text_nacimiento" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_boton"
+        android:layout_marginTop="15sp"
+        />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
