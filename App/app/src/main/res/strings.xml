@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="MiTitulo">TESJI </string>
+    <string name="MiTitulo2">T E S J I :)</string>
+    <string name="app_text_nnombre">INGRESE NOMBRE</string>
+    <string name="app_text_nacimiento">INGRESE AÑO DE NACIMIENTO</string>
+    <string name="app_boton">ENVIAR DATOS</string>
+    <string name="app_Titulo_Nombre">*NOMBRE</string>
+</resources>
