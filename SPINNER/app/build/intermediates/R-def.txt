@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable button_carreras
+drawable fondo_redondeado
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable icon020
+drawable icon022
+drawable icon023
+drawable zeppelin
+font zeppelin
+id buttonVerCarreras
+id main
+id spinnerCarreras
+id textviewimprimir
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+raw dobleclick
+raw mar
+raw modem
+raw relog
+raw sonidoseleccion
+raw talmg
+string app_name
+string app_title
+style Base.Theme.SPINNER
+style Theme.SPINNER
+xml backup_rules
+xml data_extraction_rules
